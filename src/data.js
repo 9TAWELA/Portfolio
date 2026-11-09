@@ -25,6 +25,37 @@ window.PORTFOLIO = {
 
     projects: [
         {
+            id: 'devspace',
+            title: 'DevSpace',
+            year: '2026',
+            role: 'Solo project: design, development & deployment (built to learn Vercel)',
+            category: 'Full-stack',
+            summary: 'A community platform where developers publish projects, explore each other’s work and connect. Built with Next.js and deployed on Vercel.',
+            description: 'DevSpace is a home for software creators: a place to publish a project page with screenshots, tech stack and demo/source links, then let others discover it through Explore, search, categories and a “newest” feed. I built it solo as a passion project to learn the Vercel platform end-to-end, from the first Git push to a live, server-rendered production app.',
+            tech: ['Next.js', 'React', 'Tailwind CSS', 'Vercel', 'Serverless Functions', 'Git CI/CD'],
+            features: [
+                'Project showcase pages with screenshots, stack and demo/source links',
+                'Explore feed with 12 categories and “newest” sorting via URL query parameters',
+                'Site-wide search, communities and user accounts (sign-up / log-in)',
+                'Server-side rendering on Vercel, serving fresh dynamic content on every request',
+                'Git-connected deployments: every push builds automatically, every branch gets its own preview URL',
+                'Production domain separated from protected preview deployments',
+                'Accessible markup (skip-to-content link, semantic structure) and SEO meta tags'
+            ],
+            problem: 'Talented students and hobbyists build great side projects that nobody ever sees. I wanted a place to share them, and a real project to learn modern deployment on Vercel properly instead of just following tutorials.',
+            approach: 'Built the app with the Next.js App Router, React and Tailwind CSS, then connected the GitHub repository to Vercel. Pushes to main ship to production automatically, while other branches and commits get isolated preview deployments for testing before release. Dynamic pages are server-rendered by Vercel Functions, and static assets are served from Vercel’s edge network with immutable caching.',
+            challenges: 'Learning Vercel’s Deployment Protection: preview and deployment URLs were locked behind Vercel Authentication, so shared links sent visitors to a login wall. I learned the difference between preview deployments and the production domain, and configured protection so previews stay private while the production site is public.',
+            live: 'https://dev-space-taupe.vercel.app/',
+            code: '',
+            images: [],
+            preview: {
+                layout: 'site',
+                domain: 'dev-space-taupe.vercel.app',
+                tagline: 'Build something. Share it. Find your people.',
+                palette: ['#111827', '#F5F5F4', '#6366F1']
+            }
+        },
+        {
             id: 'hopeoasis',
             title: 'HopeOasis',
             year: '2024 — 2025',
